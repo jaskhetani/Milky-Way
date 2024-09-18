@@ -87,7 +87,8 @@ def update(frame):
     return orbits.values(), points.values()
 
 # Create the animation
-ani = FuncAnimation(fig, update, frames=np.arange(0, 59800, 10), init_func=init, interval=50, blit=True)
+ani = FuncAnimation(fig, update, frames=np.arange(0, 59800, 10), init_func=init)
+anim = ani
 
 # Show the animation
 plt.show()
